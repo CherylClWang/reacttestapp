@@ -1,0 +1,245 @@
+.App {
+    text-align: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px 200px;
+}
+
+/*Backgrounds*/
+.lightModeBackground {
+    background-image: url('./Images/lightBackground.png'), radial-gradient(circle, #C196DD 100%, #8D71D0 100%);
+}
+
+.darkModeBackground {
+    background-image: url('./Images/lightBackground.png'), radial-gradient(circle, #5936B4 100%, #362A84 100%);
+}
+
+/*Backgound Intensities*/
+.lightIntensity1 {
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.lightIntensity2 {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lightIntensity3 {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.darkIntensity1 {
+    background-color: rgba(26, 26, 26, 0.3);
+}
+
+.darkIntensity2 {
+    background-color: rgba(26, 26, 26, 0.4);
+}
+
+.darkIntensity3 {
+    background-color: rgba(26, 26, 26, 0.5);
+}
+
+/*FontSizes*/
+.font-xxl {
+    font-size: 86px;
+    font-weight: bold
+}
+
+.font-s {
+    font-size: 16px
+}
+
+.font-xs {
+    font-size: 14px
+}
+
+.font-xxs {
+    font-size: 10px
+}
+
+/*FontSizes*/
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-purple {
+    color: #6C40B5;
+}
+
+.text-grey {
+    color: #666666;
+}
+
+.text-grey-dark {
+    color: rgba(26, 26, 26, 0.5);
+}
+
+.text-black {
+    color: #000000;
+}
+
+/*Buttons*/
+.searchBtn {
+    border-radius: 20px !important;
+    background-color: #6C40B5 !important;
+    width: fit-content !important;
+    margin: auto;
+    margin-left: 5px;
+}
+
+.searchBtnDark {
+    border-radius: 20px !important;
+    background-color: #28124D !important;
+    width: fit-content !important;
+    margin: auto;
+    margin-left: 5px;
+}
+
+.historyBtn {
+    background-color: #FFFFFF !important;
+    border-radius: 50px !important;
+    margin-left: 10px;
+}
+
+.historyBtnDark {
+    background-color: transparent !important;
+    border-radius: 50px !important;
+    border: 2px solid !important;
+    border-color: white !important;
+    margin-left: 10px;
+}
+
+.toggleLightBtn {
+    background-color: transparent !important;
+    border-radius: 3px;
+    border: 2px solid !important;
+    border-color: white !important;
+}
+
+/*InputSection*/
+.inputContainer {
+    display: flex;
+    border-radius: 20px;
+    border: 1px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.inputWrapper {
+    border-radius: 10px;
+    border: 1px;
+    padding: 10px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.inputTextBox {
+    border-radius: 10px;
+    border: 1px;
+    width: 100%;
+    outline: none;
+}
+
+/*MainSection*/
+.mainContainer {
+    border-radius: 40px;
+    border: 1px;
+    padding: 40px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+/*HistorySection*/
+.historyContainer {
+    margin-top: 10px;
+    border-radius: 24px;
+    padding: 20px 10px 20px 10px;
+}
+
+
+.historyItemContainer {
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 10px 20px 10px 20px;
+}
+
+/*WeatherSection*/
+.weatherDetails {
+    display: flex;
+}
+
+.weatherItem {
+    margin: auto;
+}
+
+.weatherImg {
+    width: 160px;
+    position: absolute;
+    right: 240px;
+}
+
+/*Others*/
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/*For Other Dimensions*/
+@media only screen and (max-width: 1000px) {
+    .App {
+        padding: 3vh;
+    }
+
+
+    .mainContainer {
+        padding:30px;
+    }
+
+    .inputTextBox {
+        width: 100%;
+    }
+
+    .weatherDetails {
+        display: revert;
+    }
+
+    .weatherItem {
+        margin: 0;
+    }
+
+    .font-xxl {
+        font-size: 46px;
+        font-weight: bold
+    }
+
+    .weatherImg {
+        width: 100px;
+        position: absolute;
+        right: 5vh;
+    }
+
+    .inputContainer {
+        display: block;
+    }
+
+    .historyItemContainer {
+        display: block;
+    }
+
+    .text-right {
+        text-align: left !important
+    }
+
+    .historyBtn historyBtnDark {
+        margin: 10px;
+    }
+
+    .inputWrapper {
+        margin: 10px;
+        width: auto
+    }
+}
