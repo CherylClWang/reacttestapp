@@ -13,7 +13,7 @@ function App() {
     const [isFirstItem, setIsFirstItem] = useState(true);
     const [isLightMode, setIsLightMode] = useState(true);
     const [testrec, settestrec] = useState(true);
-    const [history, setHistory] = useState([]);
+    //const [history, setHistory] = useState([]);
     const cityInputRef = useRef(null);
     const countryInputRef = useRef(null);
 
